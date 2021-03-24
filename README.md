@@ -192,5 +192,13 @@ sintaxis para declarar una variable en pug.
 
 
 
+### CONDICIONALES Y LOOPS
+
+Un condicional nos permite evaluar cierta condición y bifurcar entre dos caminos dependiendo de si se cumple o no.
+
+Un loop es un fragmento de código que va a ejecutar de forma repetitiva hasta que cumpla una condición.
+
+
+------------
 
 [========]
