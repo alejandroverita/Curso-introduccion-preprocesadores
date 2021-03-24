@@ -165,5 +165,32 @@ y ya pueden compilar desde visual studio code
 
 ------------
 
+### INTERPOLACION
+
+La interpolación es cuando se tienen variables y se le quiere concatenar texto que usualmente ser haría así
+
+    - var user = "Alejandra"; 
+    h1 "Hola " + user + ", cómo estas?"
+Se realice de la siguiente forma
+
+    h1 Hola #{user}, cómo estas?
+
+------------
+
+### VARIABLES
+
+Las variables no vienen de forma nativa en HTML pero con PUG podemos usarlas. En ellas almacenamos datos y los reutilizarlos en todo nuestro archivo HTML evitándonos tener que escribir lo mismo una y otra vez.
+
+sintaxis para declarar una variable en pug.
+
+    -var titulo = "Subtítulo Principal"
+    -var titulos = ["Título Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+
+
+
+------------
+
+
+
 
 [========]
