@@ -1,29 +1,5 @@
--var subtitulo = "Sub-titulo Principal"
-
--var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo2", "Subtitulo3"]
-
-//-var usuario = "David"
-
-mixin caja (imagen, titulo, contenido)
-	.caja 
-		.caja__imagen: img(src="images/"+imagen)
-		.caja__contenido
-			h3=titulo
-			p=contenido
-			a.button Leer Mas
-
-doctype html
-html
-	head
-		meta(charset="UTF-8")
-		link(rel="stylesheet",href='css/ejercicio-pug.css')
-	body
-		header
-			h1 PlatziGames
-			if usuario 
-				a Hola #{usuario}
-			else 
-				a.boton Registro
+extend Componentes/plantilla.pug
+block contenidos
 		section.intro 
 			.intro__imagen: img(src="images/imagen.png")
 			.intro__contenido 

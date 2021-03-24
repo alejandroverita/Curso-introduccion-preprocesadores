@@ -212,6 +212,36 @@ La forma de llamar un mixin es con "+" seguido del nombre del mixin
 
 ------------
 
+### INCLUDES Y EXTENDS
+
+Pug funciona como un generador de plantillas, dos de sus principales características para lograrlo son Includes y Extends.
+
+Los includes sirven para incluir un archivo de extensión *.pug dentro de otro.
+
+Los extends te permiten adicionar bloques de código a una página.
+
+El include te trae sin mas el fragmento de código del archivo al que haces referencia y no puedes meter código pero el extends no solo te trae el código sino que puedes decirle en qué posición de ese código que te traes puedes colocar un nuevo código.
+
+El extends funciona como un mixin ya al que le pasas “parámetros” (pero en el extends sería el nombre que le das al bloque) cuando lo ejecutas y luego lo utilizas en donde le especifiques.
+Por ejemplo:
+
+	mixin prueba(texto) // este es el parámetro al que hago referencia
+	p= texto // Acá lo utilizas
+
+En cambio si usas el extends
+
+	// Primero definirías tu archivo al que vas a extender posteriormente
+	div.contenedor
+	img(src="images/image.png")
+	block texto
+
+	// Y luego lo usarías
+	extends archivo.pug
+	block texto
+	p	Texto de pruebas // Esto es lo que pasaría a ser como el parámetro del mixin ya que se incluirá en donde tú definiste el block
+
+
+------------
 
 
 [========]
