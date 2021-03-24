@@ -201,4 +201,17 @@ Un loop es un fragmento de código que va a ejecutar de forma repetitiva hasta q
 
 ------------
 
+### MIXINS
+
+Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
+
+Con los mixin logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
+
+La forma de llamar un mixin es con "+" seguido del nombre del mixin
+
+
+------------
+
+
+
 [========]
