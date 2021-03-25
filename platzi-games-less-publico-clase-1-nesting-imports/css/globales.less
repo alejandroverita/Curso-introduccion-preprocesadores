@@ -5,6 +5,8 @@
 @Fuente1: 'Lato', sans-serif;
 @Fuente2: 'Oswald', sans-serif;
 @fuente-base: 18px;
+//agregar vriable para dark mode
+@dark-mode: true;
 
 //Esto es un mixins por que se utiliza varias veces
 .sombra-caja {
@@ -17,6 +19,42 @@
 	font-weight: 700;
 }
 
+.fuente(@font-size) {
+	font-size: @font-size;
+	line-height: @font-size + 10%;
+}
+
+//creando el mixin de version oscura
+
+.dark() when (@dark-mode = true) {
+	background-color: @color-primario;
+	color: @color-claro;
+  
+	.intro {
+	  	background-color: @color-secundario;
+	}
+  
+	.caja {
+	  span {
+		color: fade(@color-claro, 80%);
+	  }
+	}
+  
+	.caja__contenido {
+	  background-color: @color-secundario;
+	  a {
+		color: fade(@color-claro, 50%);
+	  }
+	}
+  
+	.articulo--principal {
+	  h2 {
+		color: @color-secundario;
+	  }
+	}
+  }
+
+
 *{
 	box-sizing: border-box;
 }
@@ -24,7 +62,8 @@ body {
 	margin: 0;
 	font-family: @Fuente1;
 	color: @color-primario;
-	line-height: @fuente-base + 10%;
+	.fuente(@fuente-base);
+	.dark;
 }
 
 h1,h2,h3 {

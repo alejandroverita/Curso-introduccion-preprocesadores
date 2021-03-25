@@ -13,7 +13,25 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
   color: #333;
+  font-size: 18px;
   line-height: 28px;
+  background-color: #333;
+  color: #FFF;
+}
+body .intro {
+  background-color: #8841da;
+}
+body .caja span {
+  color: rgba(255, 255, 255, 0.8);
+}
+body .caja__contenido {
+  background-color: #8841da;
+}
+body .caja__contenido a {
+  color: rgba(255, 255, 255, 0.5);
+}
+body .articulo--principal h2 {
+  color: #8841da;
 }
 h1,
 h2,
@@ -62,6 +80,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
+  line-height: 60px;
 }
 .intro__autor {
   width: 150px;
@@ -90,12 +109,14 @@ h3 {
   margin: 0 auto;
 }
 .articulo--principal__intro {
-  font-size: 26px;
+  font-size: 25px;
+  line-height: 35px;
 }
 .articulo--principal h2 {
   margin: 40xp 0 40px 0;
-  font-size: 50px;
   text-align: center;
+  font-size: 50px;
+  line-height: 60px;
 }
 .articulo--principal h3 {
   color: #8841da;
