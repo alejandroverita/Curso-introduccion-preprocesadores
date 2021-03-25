@@ -249,3 +249,16 @@ En cambio si usas el extends
 ## LESS
 ### INTRODUCCION A LESS
 
+Less es un preprocesador para CSS que nos permite trabajar hojas de estilo con funcionalidades de un lenguaje de programación.
+
+El ampersand (&) es un selector en Less que sirve para referenciar la estructura completa hacia arriba, desde donde se utiliza. es un comodín para sustituir el elemento padre (pero no solo el elemento padre, sino el padre con todos sus padres).
+
+Si lo quieren ejecutar desde la terminal lo pueden hacer de la siguiente manera:
+
+    npm install -g less
+    lessc platzigames.less platzigames.css
+
+------------
+
+
+
