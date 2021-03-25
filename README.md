@@ -165,5 +165,87 @@ y ya pueden compilar desde visual studio code
 
 ------------
 
+### INTERPOLACION
+
+La interpolación es cuando se tienen variables y se le quiere concatenar texto que usualmente ser haría así
+
+    - var user = "Alejandra"; 
+    h1 "Hola " + user + ", cómo estas?"
+Se realice de la siguiente forma
+
+    h1 Hola #{user}, cómo estas?
+
+------------
+
+### VARIABLES
+
+Las variables no vienen de forma nativa en HTML pero con PUG podemos usarlas. En ellas almacenamos datos y los reutilizarlos en todo nuestro archivo HTML evitándonos tener que escribir lo mismo una y otra vez.
+
+sintaxis para declarar una variable en pug.
+
+    -var titulo = "Subtítulo Principal"
+    -var titulos = ["Título Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+
+
+
+------------
+
+
+
+### CONDICIONALES Y LOOPS
+
+Un condicional nos permite evaluar cierta condición y bifurcar entre dos caminos dependiendo de si se cumple o no.
+
+Un loop es un fragmento de código que va a ejecutar de forma repetitiva hasta que cumpla una condición.
+
+
+------------
+
+### MIXINS
+
+Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
+
+Con los mixin logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
+
+La forma de llamar un mixin es con "+" seguido del nombre del mixin
+
+
+------------
+
+### INCLUDES Y EXTENDS
+
+Pug funciona como un generador de plantillas, dos de sus principales características para lograrlo son Includes y Extends.
+
+Los includes sirven para incluir un archivo de extensión *.pug dentro de otro.
+
+Los extends te permiten adicionar bloques de código a una página.
+
+El include te trae sin mas el fragmento de código del archivo al que haces referencia y no puedes meter código pero el extends no solo te trae el código sino que puedes decirle en qué posición de ese código que te traes puedes colocar un nuevo código.
+
+El extends funciona como un mixin ya al que le pasas “parámetros” (pero en el extends sería el nombre que le das al bloque) cuando lo ejecutas y luego lo utilizas en donde le especifiques.
+Por ejemplo:
+
+	mixin prueba(texto) // este es el parámetro al que hago referencia
+	p= texto // Acá lo utilizas
+
+En cambio si usas el extends
+
+	// Primero definirías tu archivo al que vas a extender posteriormente
+	div.contenedor
+	img(src="images/image.png")
+	block texto
+
+	// Y luego lo usarías
+	extends archivo.pug
+	block texto
+	p	Texto de pruebas // Esto es lo que pasaría a ser como el parámetro del mixin ya que se incluirá en donde tú definiste el block
+
+
+------------
+
 
 [========]
+
+## LESS
+### INTRODUCCION A LESS
+
