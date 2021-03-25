@@ -260,5 +260,86 @@ Si lo quieren ejecutar desde la terminal lo pueden hacer de la siguiente manera:
 
 ------------
 
+### ANIDAMIENTOS E IMPORTS
+
+Creamos un archivo nuevo que contentra el estilo del intro, llamado intros.less
+
+	.intro {
+    width: 1340px;
+    height: 650px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    
+    // Aca se indica que esa clase esta dentro de intro
+    /* .intro__imagen {
+        width: 1320px;
+        position: absolute;
+    } */
+    
+    // Aca el signo & indica que la primera parte tiene la misma clase  en este caso intro
+
+    &__imagen {
+        width: 1320px;
+        position: absolute;
+        img{
+            width: 100%;
+            height: 624px;
+            object-fit: cover;
+        }
+    }
+
+    &__contenido{
+        width: 50%;
+        margin: 0 auto;
+        position:absolute;
+        top:156px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: white;
+    }
+    &__categoria{
+        font-family: 'Oswald',sans-serif;
+        text-transform: uppercase;
+    }
+
+    &__titulo{
+        font-family: 'Oswald',sans-serif;
+        text-transform: uppercase;
+        font-size: 50px;
+    }
+
+    &__autor{
+        width: 150px;
+        margin: 0 auto;
+        position: absolute;
+        top: 400px;
+        left:0;
+        right: 0;
+        color: white;
+        img{
+            width: 60px;
+            height: 50px;
+            float: left;
+            padding-right: 10px;
+            border-radius: 10em;
+        }
+        span{
+            display: inline-block;
+        }
+    }
+	}
+
+Nuestro archivo platzigames.less
+
+	@import "globales.css";
+	@import "intros.css";
+
+------------
+
+
+
+
 
 
