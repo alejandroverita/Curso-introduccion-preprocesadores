@@ -4,7 +4,10 @@
 	padding: 10px;
 	margin: 0 auto;
 	position: relative;
+	background-color: @color-claro;
 
+	.sombra-caja(); //llamando mixin
+	
 	//elemento del bloque
 	&__imagen {
 		width: 1320px;
@@ -28,14 +31,12 @@
 	}
 
 	&__categoria {
-		font-family: @Fuente2;
-		text-transform: uppercase;
+		.Oswald; //mixin
 		color: fade(@color-claro, 50%);
 	}
 
 	&__titulo {
-		font-family: @Fuente2;
-		text-transform: uppercase;
+		.Oswald;
 		font-size: 50px;
 	}
 

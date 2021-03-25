@@ -361,6 +361,28 @@ Reemplazar las fuentes y los colores por el nombre de las variables
 
 ------------
 
+### FUNCIONES
+
+La diferencia entre mixins y funciones es que las funciones por general hacen cálculos y regresan un resultado que es usado como valor de alguna propiedad.
+
+Las funciones en Less ya están prediseñadas.
+
+[Documetacion oficial](http://lesscss.org/#functions "Documetacion oficial")
+
+
+
+------------
+
+
+### MIXIN
+
+Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
+
+Con los mixins logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
+
+
+
+------------
 
 
 
