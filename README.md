@@ -340,6 +340,29 @@ Nuestro archivo platzigames.less
 
 
 
+### VARIABLES
+
+En las variables almacenamos datos que se puede reutilizar en todas nuestras hojas de estilos. Así evitamos tener que escribir lo mismo una y otra vez cuando se realiza algún cambio, ya que sólo vamos a modificar el valor de la variable y se aplicará a todos los lugares donde sea usada.
+
+Comúnmente almacenamos en variables las guías de estilo de nuestro sitio, como pueden ser los colores y fuentes.
+
+Añadir a globales.less las siguientes variables
+
+    @color-claro: #FFF;
+    @color-primario: #333;
+    @color-secundario: #8841da;
+    @color-variacion: #012179;
+    @Fuente1: 'Lato', sans-serif;
+    @Fuente2: 'Oswald', sans-serif;
+	
+
+Reemplazar las fuentes y los colores por el nombre de las variables
+
+
+------------
+
+
+
 
 
 
