@@ -441,6 +441,30 @@ Extends sirve para insertar los estilos de un selector en otro.
 
 ------------
 
+### MIXIN
+
+Su finalidad es ofrecer una funcionalidad que pueda ser reutilizada en otras clases pero que no está pensada para usarse de forma autónoma. Nos permite crear bloques reusables de código que cambian su resultado dependiendo del parámetro que enviemos.
+
+Con los mixin logramos escribir menos código, produciendo un código más claro, más expresivo y sobre todo más fácil de mantener.
+
+    @mixin caja {
+    	border-radius: 20px;
+    	box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.50);
+    	color: $color-primario;
+    	background-color: $color-claro;
+    }
+
+Se lo llama en el archivo con la palabra include y el nombre del mixin
+
+	@include caja 
+
+------------
+
+
+
+
+
+
 [========]
 
 
