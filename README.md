@@ -534,6 +534,84 @@ Un loop es un fragmento de código que va a ejecutar de forma repetitiva hasta q
 ------------
 
 
+### FINALIZANDO EJERCICIO
+
+
+
+<img src="https://static.platzi.com/media/user_upload/2020-09-12%2000_58_30-PlatziGames-d07ad39c-4e83-45e9-96bc-9ef38b0e6863.jpg" alt="reto">
+
+Crear mixin
+
+    @mixin mode-background ($color) {
+    	@if $color == $color-primario {
+    			background-color: $color-primario;
+    			color: $color-claro;
+    			.perfil__nombre{
+    				color: $color-secundario;
+    				@include titulos($Fuente2);
+    			}
+    
+    			.perfil__titulo{
+    				color: $color-variacion;
+    				@include titulos($Fuente2);
+    			}
+    
+    			.perfil__boton {
+    				color: $color-claro;
+    				background-color: $color-variacion;
+    			}
+    
+    	} @else  {
+    			background-color: $color-claro;
+    			color: $color-primario;
+    		.perfil__nombre{
+    			color: $color-secundario;
+    			@include titulos($Fuente2);
+    		}
+    
+    		.perfil__titulo{
+    			color: $color-variacion;
+    			@include titulos($Fuente2);
+    		}
+    
+    		.perfil__boton {
+    			color: $color-claro;
+    			background-color: $color-variacion;
+    		}
+    	}
+    }
+
+
+Agregar el mixin a _perfiles.scss
+
+    .perfil {
+    	width: 40%;
+    	padding-top: 50px;
+    	color: $color-claro;
+    	background-color: $color-secundario;
+    	@include mode-background ($color-claro);
+    	&__avatar {
+    		display: block;
+    		margin: 0 auto;
+    		border-radius: 50em;
+    	} ...... //Continua parte del codifo hecho en las clases
+
+
+Agregar el Mixion en _articulos.scss
+
+    .articulos {
+    	width: 60%;
+    	padding: 50px 0 0 50px;
+    	@include mode-background ($color-primario);
+    }
+	
+
+<img src="https://static.platzi.com/media/user_upload/2020-09-12%2000_58_30-PlatziGames-d07ad39c-4e83-45e9-96bc-9ef38b0e6863.jpg" alt="reto">
+
+
+------------
+
+
 
 
 
