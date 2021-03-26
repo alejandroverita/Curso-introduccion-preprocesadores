@@ -462,6 +462,52 @@ Se lo llama en el archivo con la palabra include y el nombre del mixin
 
 
 
+### FUNCIONES
+
+La diferencia entre mixins y funciones es que las funciones por general hacen cálculos y regresan un resultado que es usado como valor de alguna propiedad.
+
+Crear archivo _galerias.scss
+Añadir un include en nuestro archivo compilado
+
+    .galeria {
+        width: 50%;
+        height: 250px;
+        margin: 10px auto;
+        padding: 20px 0 0 30px;
+        justify-content: space-evenly;
+        @include caja;
+        &__foto-principal {
+            float: left;
+            margin-right: 10px;
+        }
+        &__fotos-adicionales img {
+            height: 70px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: $Fuente2;
+        }
+    
+        img {
+            border-radius: 10px;
+        }
+    }
+
+Crear funcion en _globales.scss
+
+    @function get-opacity ($color, $nivel) {
+    	@return rgba($color, $nivel);
+    }
+
+
+------------
+
+
 
 
 

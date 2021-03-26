@@ -19,6 +19,7 @@
 		text-align: center;
 		font-weight: 700;
 		font-size: 12px;
+		color: get-opacity($color-claro, .50);
 	}
 	&__boton {
 		display: block;
@@ -31,7 +32,9 @@
 		text-transform: uppercase;
 		text-align: center;
 		font-family: $Fuente2;
-		color: $color-claro
+		color: $color-claro;
+		background-color: get-opacity($color-primario, .20);
+		border: 2px solid get-opacity($color-claro, .30);
 	}
 }
 
