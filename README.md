@@ -432,7 +432,14 @@ Comúnmente almacenamos en variables las guías de estilo de nuestro sitio, como
 
 ------------
 
+### IMPORT Y EXTENDS
 
+Import nos permite escribir código modular separando en diferentes archivos para después importarlos todos en uno solo y tener una base código mucho más ordenada.
+
+Extends sirve para insertar los estilos de un selector en otro.
+
+
+------------
 
 [========]
 
