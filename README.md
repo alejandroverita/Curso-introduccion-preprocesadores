@@ -407,6 +407,32 @@ Compilar de sass a css
 
 ------------
 
+### VARIABLES
+
+En las variables almacenamos datos que se puede reutilizar en todas nuestras hojas de estilos. Así evitamos tener que escribir lo mismo una y otra vez cuando se realiza algún cambio, ya que sólo vamos a modificar el valor de la variable y se aplicará a todos los lugares donde sea usada.
+
+Comúnmente almacenamos en variables las guías de estilo de nuestro sitio, como pueden ser los colores y fuentes.
+
+    // Asi se declaran variables
+    $Fuente1:'Lato',sans-serif;
+    $Fuente2:'Oswald',sans-serif;
+    $color-primario:#333333;
+    $color-claro:#FFFFFF;
+    $color-secundario:#8841DA;
+    $color-variacion:#3F579A;
+    
+    *{
+        box-sizing: border-box;
+    }
+    
+    body{
+        margin: 0;
+        font-family: $Fuente1; // Asi como se usan
+    }
+
+------------
+
+
 
 [========]
 
