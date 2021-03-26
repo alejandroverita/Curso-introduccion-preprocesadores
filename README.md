@@ -508,6 +508,32 @@ Crear funcion en _globales.scss
 ------------
 
 
+### CONDICIONALES Y LOOPS
+
+Un condicional nos permite evaluar cierta condición y bifurcar entre dos caminos dependiendo de si se cumple o no.
+
+Un loop es un fragmento de código que va a ejecutar de forma repetitiva hasta que cumpla una condición.
+
+    @mixin titulos ($fuente) {
+    	@if $fuente==$Fuente1 {
+    		font-family: $Fuente1;
+    	} @else {
+    		font-family: $Fuente2;
+    		text-transform: uppercase;
+    	}
+    }
+    
+    
+    @each $header, $size in (h1: 30px, h2: 25px, h3: 20px) {
+    	#{$header} {
+    		font-size: $size;
+    		margin: 0;
+    	}
+    }
+
+------------
+
+
 
 
 
