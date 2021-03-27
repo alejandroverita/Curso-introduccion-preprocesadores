@@ -1,0 +1,18 @@
+/* Error: expected ";".
+ *    ,
+ * 37 |     height:
+ *    |           ^
+ *    '
+ *   componentes\_headers.scss 37:11  @import
+ *   platzi-games.scss 12:9           root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 37 \2502      height:\d\a    \2502            ^\a    \2575 \a   componentes\\_headers.scss 37:11  @import\a   platzi-games.scss 12:9           root stylesheet';
+}
