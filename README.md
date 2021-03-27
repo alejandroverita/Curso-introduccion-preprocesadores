@@ -763,6 +763,29 @@ Archivo estadisticas.styl
 
 ------------
 
+### CONDICIONALES Y LOOPS
+
+Un condicional nos permite evaluar cierta condición y bifurcar entre dos caminos dependiendo de si se cumple o no.
+
+Un loop es un fragmento de código que va a ejecutar de forma repetitiva hasta que cumpla una condición.
+
+    titulos(fuente)
+    	if fuente == Fuente1
+    		font-family: Fuente1
+    	else 
+    		font-family: Fuente2
+    		font-weight: 600
+    		text-transform: uppercase
+    
+
+Reto
+
+<img src="https://static.platzi.com/media/user_upload/Platzi%20Games%20-%20Reto%20Stylus-31d921fc-026f-4ff2-a117-4d551629884c.jpg" alt="reto">
+
+
+
+------------
+
 
 
 
