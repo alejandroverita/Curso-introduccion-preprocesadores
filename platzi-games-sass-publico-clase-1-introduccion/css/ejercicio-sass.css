@@ -20,6 +20,7 @@ h3 {
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background-color: #333333;
 }
 
 main {
@@ -31,6 +32,7 @@ main {
 
 .perfil {
   width: 50%;
+  height: 100vh;
   padding-top: 50px;
   color: #FFFFFF;
   background-color: #8841DA;
@@ -74,7 +76,7 @@ main {
   width: 100px;
   height: 40px;
   margin: 15px auto;
-  padding-top: 15px;
+  padding-top: 7px;
   border-radius: 20px;
   text-decoration: none;
   font-family: "Oswald", sans-serif;
@@ -180,8 +182,8 @@ main {
 .articulos {
   width: 40%;
   padding: 50px 0 0 50px;
-  background-color: #FFFFFF;
-  color: #333333;
+  background-color: #333333;
+  color: #FFFFFF;
 }
 .articulos .perfil__nombre, .articulos .perfil__minibio h2, .perfil__minibio .articulos h2 {
   color: #8841DA;

@@ -78,6 +78,7 @@ $color-variacion:#3F579A;
 body {
 	margin: 0;
 	@include titulos($Fuente1);
+	background-color: $color-primario;
 	
 }
 
