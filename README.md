@@ -715,6 +715,56 @@ Codigo añadido
 
 
 
+###  FUNCIONES
+
+La diferencia entre mixins y funciones es que las funciones por general hacen cálculos y regresan un resultado que es usado como valor de alguna propiedad.
+
+Archivo raiz
+
+
+
+```
+@import "../componentes/globales.styl"
+@import "../componentes/buscadores.styl"
+@import "../componentes/filtros.styl"
+@import "../componentes/cajas.styl"
+@import "../componentes/estadisticas.styl"
+```
+
+Funcion en archivo globlales.stly
+
+
+
+```
+opacidad(color, cantidad)
+	alpha(color, cantidad)
+```
+
+Archivo estadisticas.styl
+
+
+```
+.estadistica--articulos
+    height: 70px
+    padding: 20px
+    border-top: 1px solid color-primario
+    ul
+        display: flex 
+        margin: 0
+        padding: 0
+        justify-content: space-evenly
+        li 
+            list-style: none
+            color: opacidad(color-primario, .30)
+        span
+            margin-left: 10px
+```
+
+
+------------
+
+
+
 
 
 [========]
