@@ -8,7 +8,7 @@
 }
 
 .nav--header ul {
-    display: flex;
+    display: none;
     padding-top: 35px;
     li {
         list-style: none;
@@ -17,6 +17,9 @@
     a{
         color: $color-variacion;
         @include titulos($Fuente2);
+    }
+    @include media(desktop-s) {
+        display: flex;
     }
 }
 
@@ -31,6 +34,10 @@
         font-size: 20px;
         margin-right: 10px;
         color: $color-secundario;
+    }
+
+    @include media(desktop-s) {
+        display: flex;
     }
 
 }
